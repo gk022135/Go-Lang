@@ -1,4 +1,5 @@
 package main
+import "fmt"
 
 
 func main(){
@@ -34,4 +35,39 @@ func main(){
 			println("index:", i)
 		}
 	}
+	
+	// for loop with range to get index and value of string
+	for i, c := range "go" {
+		println(i, c)
+	}
+	
+	// for loop with range to get index and value of map
+	kvs := map[string]string{"a": "apple", "b": "banana"}
+	for k, v := range kvs {
+		println(k, v)
+	}
+	
+	// for loop with range to get index and value of string
+	for i, c := range "go" {
+		println(i, c)
+	}
+
+
+	// for loop with range to get index and value of map
+	kvs = map[string]string{"a": "apple", "b": "banana"}
+	for k, v := range kvs {
+		println(k, v)
+	}
+	
+	// for loop with range to get index and value of string
+	for i, c := range "go" {
+		println(i, c)
+	}
+
+	// for loop with range to get index and value of map
+	kvs = map[string]string{"a": "apple", "b": "banana"}
+	for k, v := range kvs {
+		println(k, v)
+	}
+	
 }
