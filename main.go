@@ -54,7 +54,19 @@ func main() {
 
 
 
-	// GET /users → fetch all users
+	// GET /users → fetch all users// // // Initialize Prisma client
+	// client := db.NewClient()
+
+	// // // Connect to Postgres
+	// if err := client.Prisma.Connect(); err != nil {
+	// 	log.Fatalf(" Could not connect to database: %v", err)
+	// }
+	// fmt.Println("✅ Connected to the database")
+	// defer func() {
+	// 	if err := client.Prisma.Disconnect(); err != nil {
+	// 		log.Fatalf(" Failed to disconnect: %v", err)
+	// 	}
+	// }()
 	http.HandleFunc("/users", func(w http.ResponseWriter, r *http.Request) {
 
 		w.Header().Set("Content-Type", "application/json") // set JSON content type

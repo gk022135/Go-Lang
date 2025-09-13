@@ -23,6 +23,8 @@ type Response struct {
 	Data     interface{} `json:"data,omitempty"`
 }
 
+
+
 func SignUp(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("Signup endpoint hit")
 
@@ -77,7 +79,7 @@ func SignUp(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	fmt.Println("✅ new user response:", newUser)
+	fmt.Println("new user response:", newUser)
 
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(http.StatusOK)
